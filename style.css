@@ -1,0 +1,474 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+@font-face {
+    font-family: 'Methanerse';
+    src: url(fonts/MethanerseFreeTrial-eZX7x.ttf) format(truetype);
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SauceCodeProNerdFont';
+    src: url(fonts/SauceCodeProNerdFont-Medium.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Angora';
+    src: url(fonts/Angora-1G3BB.otf) format(truetype);
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'AnkaCoder';
+    src: url(fonts/AnkaCoder-b.ttf) format('truetype');
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: auto;
+}
+
+/* First Container */
+
+.container-1 {
+    background-image: url(images/download.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+   }
+   .container-1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); /* Black overlay with 50% opacity */
+  }
+.intro-page {
+    display: grid;
+    gap: 4rem;
+    grid-template-rows: repeat(8, 1fr);
+    grid-template-columns: repeat(6, 1fr);
+    height: 53rem;
+    width: 115rem;
+}
+.logo {
+    font-family: 'Angora', sans-serif;
+    text-decoration: underline;
+    color: rgb(232, 236, 240);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    text-shadow: 1px 1px 4px rgb(166, 184, 211);
+}
+/* Navigation Bar */
+.navigation-bar {
+    grid-column: 2/6;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+    height: 3rem;
+    background: rgba(131, 129, 129, 0.2);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'AnkaCoder', sans-serif;    
+    font-size: 25px;
+    color: aliceblue;
+}
+.about-us{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'AnkaCoder', sans-serif;    
+    font-size: 25px;
+    color: aliceblue;
+}
+.destination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'AnkaCoder', sans-serif;    
+    font-size: 25px;
+    color: aliceblue;
+}
+.store {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'AnkaCoder', sans-serif;    
+    font-size: 25px;
+    color: aliceblue;
+}
+.flights {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'AnkaCoder', sans-serif;
+    font-size: 25px;
+    color: aliceblue;
+
+}
+.profile-sec {
+    width: 10rem;
+    margin-left: 5.5rem;
+    display: grid;
+    gap: 0.5rem;
+    grid-template-columns: repeat(4, 1fr);
+    background: rgba(131, 129, 129, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    height: 3rem;
+}
+.photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+    margin-top: 3px;
+    margin-left: 1rem;
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 100%;
+
+}
+.profile {
+    grid-column: span 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'AnkaCoder', sans-serif;
+    margin-right: 1rem;
+    font-size: 18x;
+    color: aliceblue;
+}
+.home:hover, .about-us:hover, .destination:hover, .store:hover, .flights:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    transition: 0.4ss;
+}
+/* Introductory Section*/
+.introduction {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    color: rgb(219, 225, 230);
+    grid-column: span 6 ;
+    grid-row: span 7;
+    font-size: 40px;
+    background: rgba(131, 129, 129, 0.2);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+}
+h2 {
+    font-family: 'SauceCodeProNerdFont', sans-serif;
+    padding-left: 2rem;
+    padding-bottom: 6rem;
+    margin-top: 4rem;
+    font-weight: bold;
+}
+p {
+    font-family: 'AnkaCoder', sans-serif;
+    font-size: 30px;
+    padding-left: 2rem;
+    padding-bottom: 3rem;
+}
+.intro-image {
+    margin-top: 3rem;
+    background-image: url(images/scifi-city.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    height: 40rem;
+    width: 55rem;
+}
+
+/* Second container */
+
+.container-2 {
+    position: relative;
+    background: #07141a ;
+    background-image: url(images/Haven\,\ Gabriel\ Gajdoš.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container-2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.719); /* Adjust opacity as needed */
+    z-index: 1; /* Ensure it’s above the container background */
+}
+.display-images {
+    position: relative;
+    z-index: 2;
+    display: grid;
+    gap: 4rem;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    height: 53rem;
+    width: 115rem;
+}
+.box-1 {
+    font-family: 'SauceCodeProNerdFont', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(219, 225, 230);
+    font-size: 60px;
+    font-weight: bold;
+    grid-column: span 4;
+    border-radius: 25px;
+    background: rgba(131, 129, 129, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.box-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/space-sjips.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-row: span 4;
+    border-radius: 16px;
+
+}
+.box-3 {
+    background-image: url(images/Solitary\ Astronaut\ Over\ Earth_\ A\ Cosmic\ Perspective.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    grid-row: span 4;
+    border-radius: 16px;
+}
+.box-4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    background-image: url(images/strange-planet.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-row: span 4;
+    border-radius: 16px;
+}
+.box-5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/hotel.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 30px;
+    grid-row: span 4;
+    border-radius: 16px;
+}
+
+/* Third container */
+
+.container-3 {
+    position: relative;
+    background: #07141a ;
+    background-image: url(images/Dark\ Space\ Wallpapers\ HD\ Free\ Download.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container-3::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); /* Adjust opacity as needed */
+    z-index: 1; /* Ensure it’s above the container background */
+}
+.destination-description {
+    position: relative;
+    z-index: 2;
+    display: grid;
+    gap: 2rem;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    height: 48rem;
+    width: 115rem;
+}
+.dest-image {
+    grid-row: span 5;
+    background-image: url(images/scifi-landscape.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+}
+.dest-title {
+    font-family: 'SauceCodeProNerdFont', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(219, 225, 230);
+    font-size: 50px;
+}
+.dest-description {
+    grid-row: span 4;
+    font-family: 'AnkaCoder', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(219, 225, 230);
+    font-size: 30px;
+    background: rgba(131, 129, 129, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 25px;
+    padding: 0rem 3rem 0rem 3rem;
+}
+
+/* Fourth container */
+
+.container-4 {
+    position: relative;
+    background: #07141a ;
+    background-image: url(images/container-4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container-4::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); /* Adjust opacity as needed */
+    z-index: 1; /* Ensure it’s above the container background */
+}
+.ship-description {
+    position: relative;
+    z-index: 2;
+    display: grid;
+    gap: 2rem;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    height: 48rem;
+    width: 115rem;
+}
+.ship-title {
+    font-family: 'SauceCodeProNerdFont', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(219, 225, 230);
+    font-size: 50px;}
+.ship-image {
+    grid-row: span 4;
+    background-image: url(images/space-flight.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+}
+.ship-descrip {
+    grid-row: span 3;
+    font-family: 'AnkaCoder', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(219, 225, 230);
+    font-size: 30px;
+    background: rgba(131, 129, 129, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 25px;
+    padding: 0rem 3rem 0rem 3rem;
+}
+
+/* Fifth container */
+
+.container-5 {
+    position: relative;
+    background: linear-gradient(#07141a ,rgba(46, 43, 43, 0.795));
+    background-image: url(images/EMPIRES\ -\ Tanks\,\ Artur\ Gurin.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container-5::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity as needed */
+    z-index: 1; /* Ensure it’s above the container background */
+}
+.contact-page {
+    position: relative;
+    z-index: 2;
+    background: rgba(131, 129, 129, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 25px;
+    display: grid;
+    gap: 2rem;
+    grid-template-rows: repeat(2, 1fr);
+    height: 48rem;
+    width: 115rem;
+}
+.outro {
+    font-family: 'SauceCodeProNerdFont', sans-serif;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    color: rgb(219, 225, 230);
+}
+.message {
+    font-size: 60px;
+    text-align: center;
+    margin-top: 4rem;
+}
+#book {
+    font-family: 'SauceCodeProNerdFont', sans-serif;
+    background: rgb(2, 172, 202);
+    color: rgb(241, 245, 245);
+    width: 8rem;
+    height: 3rem;
+    margin-left: 54rem;border-radius: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    box-shadow: 1px 1px 8px rgb(129, 132, 134);
+}
+.contact-details {
+    font-family: 'SauceCodeProNerdFont', sans-serif;
+    margin-left: 5rem;
+    color: white;
+    font-size: 20px;
+}
