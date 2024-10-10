@@ -445,13 +445,15 @@ p {
 .outro {
     font-family: 'SauceCodeProNerdFont', sans-serif;
     display: grid;
+    gap: 4rem;
     grid-template-rows: repeat(2, 1fr);
     color: rgb(219, 225, 230);
+    margin-top: 5rem;
 }
 .message {
     font-size: 60px;
     text-align: center;
-    margin-top: 4rem;
+    margin-top: 2rem;
 }
 #book {
     font-family: 'SauceCodeProNerdFont', sans-serif;
@@ -468,6 +470,7 @@ p {
 }
 .contact-details {
     font-family: 'SauceCodeProNerdFont', sans-serif;
+    margin-top: 15rem;
     margin-left: 5rem;
     color: white;
     font-size: 20px;
