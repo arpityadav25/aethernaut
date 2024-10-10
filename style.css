@@ -4,6 +4,7 @@
     box-sizing: border-box;
     overflow-x: hidden;
 }
+/* Fonts */
 @font-face {
     font-family: 'Methanerse';
     src: url(fonts/MethanerseFreeTrial-eZX7x.ttf) format(truetype);
